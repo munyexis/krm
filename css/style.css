@@ -1,0 +1,545 @@
+body{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ================Menu Bar Style Starts Here======================= */
+.navbar{
+    padding: 22px 0px;
+    border-bottom: none !important;
+}
+.navbar ul li a{
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 1PX;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.5s ease-in;
+    background-color: #64707b;
+    border-radius: 3px;
+}
+.navbar ul li a:hover .navbar ul li a:focus{
+    color: blue !important;
+    background-color: #64707b;
+}
+.navbar-toggle{
+    border: 1px solid white !important;
+}
+.navbar-toggle:hover{
+    background-color: deepskyblue !important;
+    border: 1px solid rgb(18, 116, 62);
+}
+.navbar-inverse .navbar-toggle{
+    border-color: white !important;
+}
+.navbar-inverse{
+    margin-top: 0px;
+    background-color: rgba(45, 42, 42, 0.963) !important;
+}
+/* ================Image Style Starts Here======================= */
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.navbar-brand img {
+    width: 10%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    animation: zoomInOut 5s infinite;
+    text-align: center;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    width: 50%;
+}
+/* ================Slider Style Starts Here======================= */
+.slider{
+    width: 100%;
+    height: 700px;
+    background-image: url(..//img/logo.PNG);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.slider-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    position: relative;
+}
+.slider-content{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.icons .fa{
+    font-size: 50px;
+    margin-right: 10px;
+}
+@keyframes shine {
+    0% {
+        background-position: -200px;
+    }
+    100% {
+        background-position: 200px;
+    }
+}
+.btn1{
+    padding: 10px 18px;
+    /* background-color: white; */
+    color:white;
+    text-transform: white;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    margin-right: 50px;
+    background: linear-gradient(90deg, #3498db 25%, #2980b9 50%, #3498db 75%);
+    background-size: 200% auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: shine 2s linear infinite;
+
+}
+.btn1:hover{
+    background-color: rgb(30, 30, 88);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid rgb(28, 18, 53);
+    transition: all 0.6 ease-in;
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+}
+/* ================Slider Style Ends Here======================= */
+
+/* ================Social Networks Style Ends Here======================= */
+
+.social-networks a.fa{
+    border: 1px solid white;
+    padding: 10px;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    margin-right: 3px;
+    transition: all 0.5s ease-in;
+}
+.social-networks a.fa:hover{
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: white;
+    border: 1px solid blue;
+}
+/* ================Social Networks Style Ends Here======================= */
+
+/* ================Service Section Style Starts Here======================= */
+.service-wrap{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease-in;
+    z-index: 9;
+    margin-top: 20px;
+}
+.service-wrap::before, .service-wrap::after{
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;
+}
+.service-wrap::before{
+    top: -35px;
+    left: 100%;
+}
+.service-wrap:hover:before{
+    left: -27px;
+    opacity: 1;
+}
+.service-wrap::after{
+    right: 100%;
+    bottom: -37px;
+}
+.service-wrap:hover:after{
+    right: -37px;
+    opacity: 1;
+}
+.service-wrap:hover{
+    color: #ffff;
+}
+
+.service-wrap:hover h3{
+    color: #ffff;
+}
+.service-wrap:hover h3::after{
+    background-color: #ffff;
+}
+.service-icon i{
+    font-size: 60px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    animation: zoomInOut 5s infinite;
+    color: blueviolet;
+}
+.service-wrap:hover, .service-con i{
+    /* transform: rotate(45deg) !important; */
+    animation: zoomInOut 5s;
+}
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+/* ================Service Section Style Ends Here======================= */
+
+/* ================Work Section Style Ends Here======================= */
+    .row.no-gutters [class*=col-]{
+        padding-left: 0px;
+        padding-left: 0px;
+    }
+    .img-wrapper{
+        overflow: hidden;
+    }
+    .img-wrapper img{
+        transition: transform 0.5s ease;
+        width: 100%;
+    }
+    .img-wrapper img:hover{
+        transform: scale(1.5);
+        cursor: zoomInOut;
+    }
+    
+
+/* ================Work Section Style Ends Here======================= */
+    
+
+/* ================Team Section Style Starts Here======================= */
+    
+    .team-member{
+        margin: 0 25px;
+    }
+    .team-member-info{
+        padding: 10px 0 30px 0;
+    }
+    h4.team-member-name{
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-top: 2px;
+    }
+    h4.team-member-desination{
+        color: deepskyblue;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        text-transform: capitalize;
+    }
+    .social-list{
+        padding-left: 0px;
+    }
+    .social-list li{
+        list-style: none;
+        display: inline-block;
+    }
+    .social-list i{
+        font-size: 17px;
+    }
+    .icon-gray{
+        color: #64707b;
+    }
+    /* ================Team Section Style Ends Here======================= */
+    
+/* ================Testimonials Section Style Ends Here======================= */
+
+    .carousel-inner img{
+        /* width: 150px;
+        height: 150px; */
+        border-radius: 100%;
+        border: 3px solid white;
+        padding: 5px;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        animation: zoomInOut 5s infinite;
+    }
+    .carousel-inner img:hover{
+        animation: zoomInOut 5s infinite;
+        width: 100%;
+    }
+    .testimonials{
+        background-image: url(../img/elearning.PNG);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #ffff;
+        padding-top: 80px;
+        padding-bottom: 155px;
+    }
+    .border-bottom{
+        width: 80px;
+        height: 4px;
+        background-color: #ffff;
+        margin: 0 auto;
+    }
+    .border-bottom:hover{
+        width: 120px;
+        height : 6px;
+        color:#2980b9;
+        border: 1px solid red;
+    }
+
+/* ================Testimonials Section Style Ends Here======================= */
+
+/* ================FAQs Section Style Starts Here======================= */
+#accodian .panel{
+    /* box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px; */
+
+}
+#accodian .panel-title a{
+    display: block;
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease 0s;
+
+}
+#accodian .panel-title a:hover{
+    text-decoration: none;
+    color: blue;
+    font-size: 30px;
+}
+#accodian .panel-heading{
+    border-bottom: 1px solid blue;
+}
+#accodian .panel-title a:after,
+#accodian .panel-title a.collapsed:after{
+    content: "\f068";
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    border-radius: 50px;
+    background: rgb(123, 123, 216);
+    text-align: center;
+    font-size: 15px;
+    color: #ffff;
+    border: 3px solid black;
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    transition: all 0.3s ease 0s; 
+}
+#accodian .panel-title a.collapsed:after{
+    content: "\f067";
+}
+#accodian .panel-title a:hover:after,
+#accodian .panel-title a.collapsed:hover:after{
+    transform: rotate(360deg);
+}
+.panel-heading a{
+    text-decoration: none;
+}
+#accodian .panel-body{
+    padding: 15px 25px;
+    background-color: white;
+    font-size: 20px;
+    color: black;
+    line-height: 30px;
+    border-top: none;
+    position: relative;
+}
+/* ================FAQs Section Style Ends Here======================= */
+
+/* ================Video Section Style Starts Here======================= */
+    .video-area{
+        background: url(../img/elearningv.PNG);
+        padding-top: 180px;
+        padding-bottom: 180px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        overflow: hidden;
+        margin-top: 40px;
+        background-attachment: fixed;
+    }
+    .play{
+        background:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url(../img/play1.PNG) no-repeat 60% 50%;
+        width: 110px;
+        height: 110px;
+        border-radius: 50px;
+        display: inline-block;
+        margin-top: 70px;
+        border-bottom: 40px;
+        box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        -webkit-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        -moz-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        -o-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        -ms-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        transition: all 0.4s ease-in;
+        -webkit-transition: all 0.4s ease-in;
+        -moz-transition: all 0.4s ease-in;
+        -o-transition: all 0.4s ease-in;
+        -ms-transition: all 0.4s ease-in;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        animation: zoomInOut 5s infinite;
+    }
+    .play:hover{
+        background: #ffff url(../img/play1.PNG) no-repeat 60% 50%;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin-top: 70px;
+        border-bottom: 10px;
+        box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        -webkit-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        -moz-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        -o-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        -ms-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+        transition: all 0.4s ease-in;
+        -webkit-transition: all 0.4s ease-in;
+        -moz-transition: all 0.4s ease-in;
+        -o-transition: all 0.4s ease-in;
+        -ms-transition: all 0.4s ease-in;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        animation: zoomInOut 5s infinite;
+    }
+    .video-container{
+        position: relative;
+        padding-bottom: 54.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        margin-top: -130px;
+        display: none;
+    }
+/* ================Video Section Style Ends Here======================= */
+
+/* ================Blog Section Style Starts Here======================= */
+    .latest-news-wrap{
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+    .news-img:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: #0000;
+        opacity: 0;
+        transform: scale(0.8);
+        transition: all0.5s;
+    }
+    .news-img:hover{
+        width: 100%;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        animation: zoomInOut 5s infinite;
+    }
+    .latest-news-wrap, .news-img:before{
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    .date{
+      background: #f89406 none repeat scroll 0 0;
+      height: 70px;
+      left: 0;
+      position: absolute; 
+      text-align: center;
+      top: 0;
+      width: 70px;
+      position: 10px;
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      animation: zoomInOut 5s infinite;
+
+    }
+    .date span{
+        display: block;
+        color: white;
+        font-weight: 700px;
+        font-size: 15px;
+    }
+    .news-content{
+       padding: 20px;
+       margin-left: 3px; 
+    }
+    .news-content i{
+        font-size: 18px;
+        display: inline-block;
+    }
+    .news-content .fa{
+        padding: 3px 10px 10px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .news-content p{
+        margin-bottom: 15px;
+        text-align: justify;
+        margin-top: 20px;
+    }
+    .news-content a{
+        font-size: 14px;
+        background-color: #34495e;
+        padding: 10px 20px;color: white;
+        border-radius: 20px;
+    }
+    .news-content a:hover{
+        font-size: 14px;
+        border: 1px solid blueviolet;
+        background-color: skyblue;
+        text-decoration: none;
+   
+    }
+
+/* ================Blog Section Style Ends Here======================= */
+
+/* ================Counter Style Starts Here======================= */
+    .stat{
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/elearning.PNG);
+        background-position: center;
+        padding-top: 180px;
+        padding-bottom: 180px;
+        color: white;
+        background-attachment: fixed;
+        padding-top: 100px;
+    }
+    .stat i{
+        font-size: 85px;
+    }
+    .stat h2{
+        font-weight: bolder;
+        font-size: 42px;
+    }
+    .stat p{
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+/* ================Counter Style Ends Here======================= */
+
+/* ================Map Style Starts Here======================= */
+.maps{
+    margin-top: 0%;
+}
+
+/* ================Map Style Ends Here======================= */
